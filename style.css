@@ -1,0 +1,102 @@
+:root {
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+  --yellow: #f4d04e;
+  --white: #ffffff;
+
+  --text-preset-1: 24px;
+  --text-preset-2: 16px;
+  --text-preset-3: 14px;
+
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-300: 24px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 370px;
+  height: 480px;
+  padding: 2rem;
+  margin-top: 9rem;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 1rem 1rem 0;
+  border: 0.1rem solid;
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.small-title::before {
+  content: "Learning";
+  background-color: var(--yellow);
+  padding: 0.5rem;
+}
+.small-title {
+  font-size: var(--text-preset-3);
+  font-weight: 900;
+  margin-top: 1.5rem;
+}
+
+.date {
+  font-size: var(--text-preset-3);
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.heading:hover {
+  color: var(--yellow);
+}
+
+.heading {
+  font-size: var(--text-preset-1);
+  line-height: 150%;
+  font-weight: 900;
+}
+
+.details {
+  color: var(--gray-500);
+  font-size: var(--text-preset-2);
+  line-height: 150%;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.avatar {
+  width: 3rem;
+}
+
+.name {
+  font-size: var(--text-preset-3);
+  font-weight: 900;
+}
